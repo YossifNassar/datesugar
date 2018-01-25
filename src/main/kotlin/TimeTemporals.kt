@@ -5,7 +5,7 @@ interface TimeTemporal {
     fun getValue() : Long
 }
 
-class Days(val v: Long) : TimeTemporal {
+class Days(private val v: Long) : TimeTemporal {
     override fun plusDate(d: LocalDate, toAdd: Long): LocalDate {
         return d.plusDays(toAdd)
     }
@@ -15,7 +15,7 @@ class Days(val v: Long) : TimeTemporal {
     }
 }
 
-class Years(val v: Long) : TimeTemporal {
+class Years(private val v: Long) : TimeTemporal {
     override fun plusDate(d: LocalDate, toAdd: Long): LocalDate {
         return d.plusYears(toAdd)
     }
@@ -25,7 +25,7 @@ class Years(val v: Long) : TimeTemporal {
     }
 }
 
-class Months(val v: Long) : TimeTemporal {
+class Months(private val v: Long) : TimeTemporal {
     override fun plusDate(d: LocalDate, toAdd: Long): LocalDate {
         return d.plusMonths(toAdd)
     }
