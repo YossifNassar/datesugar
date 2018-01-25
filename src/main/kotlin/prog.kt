@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter
 
 
 fun main(args: Array<String>) {
-    var t = "2017-11".toDate().plusDays(3)
+    var t = "2017-11-01".toDate().plusDays(3)
     println(dateOf(1992,5,7))
     val nyt = dateTimeOf(1992,dayOfMonth = 7,month = 5) atZone "America/New_York"
     println(nyt)
