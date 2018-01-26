@@ -13,9 +13,14 @@ fun main(args: Array<String>) {
     val l2 = LocalDate.now()
     println(dateOf(2017) == dateOf(2018))
     println(l+l2)
-
-    val l3 = dateOf(2018,2,1) + 6.days + 3.months + 1.years
+    val l3 = dateOf(2018,2,1) + 6.days + 3.months + 1.years - 1.years
     println(l3)
+
+    val startDate = LocalDate.now() - 2.years
+    val endDate = LocalDate.now()
+    println(dateOf(2010) in startDate..endDate)
+
+    println(dateOf(2018,2,1).lastDayOfMonth())
 }
 
 
