@@ -25,7 +25,7 @@ and the output would be:
 ```
 1992-05-07T00:00-04:00[America/New_York]
 ```
-* using toDate String extension
+* using toDate String extension and days Int extension property with plus operator overloading
 
 ```kotlin
     var t = "2017-11-01".toDate() + 2.days
