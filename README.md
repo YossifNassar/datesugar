@@ -3,7 +3,7 @@ Kotlin syntactic sugar for java.time.
 
 #Usage
 
-* using dateOf to create LocalDate: 
+* using 'dateOf' to create LocalDate, 'days' and 'months' extension properties and '+' operator overloading: 
 
 ```Kotlin
     val d = dateOf(2018,2,1) + 6.days + 3.months
